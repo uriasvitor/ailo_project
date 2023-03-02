@@ -1,0 +1,22 @@
+@import "../../shared/styles/colors.scss";
+
+
+.container{
+  display: flex;
+  align-items: center;
+  height: 78px;
+
+  button{
+    margin: 0 25px;
+    color: $primary-color;
+    width: 274px;
+    height: 49px;
+    border: 1px solid $button-color;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+
+}

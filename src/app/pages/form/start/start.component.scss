@@ -1,0 +1,114 @@
+@import "../../../shared/styles/colors.scss";
+
+.container{
+  margin-top: 50px;
+
+  p,h1,label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+  }
+
+  .error-noregister{
+    margin-top: 20px;
+  }
+
+  .sub-title{
+      margin: 5px 0 45px 0;
+      color: #4F575E;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+
+    label{
+      color: $primary-color;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    input[type="text"]{
+      width: 10%;
+      margin-top: 10px;
+      width: 270px;
+      height: 34px;
+      font-size: 18px;
+      border-color: #889499;
+      padding: 0 10px;
+    }
+
+    #getCpfButton{
+      margin: 0 16px;
+      width: 172px;
+      height: 38px;
+      text-transform: none;
+      background: #165C7D;
+      border-color: $primary-color;
+      color: $white-color;
+      font-weight: 500;
+      font-family: 'exo2';
+      font-size: 15px;
+      outline: none;
+      border: none;
+      border-radius: 2px;
+
+      &[disabled]{
+        background: #0b2d3d;
+      }
+    }
+  }
+
+  .user-info{
+    width: 270px;
+    height: 183px;
+    margin-top: 50px;
+    background: $white-color;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h1{
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 19px;
+    }
+
+    p{
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      color: #787878;
+      margin: 8px 0 0;
+    }
+
+    .name-info,.user-status{
+      margin-top: 25px;
+    }
+
+    .name-info{
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+
+      .user-name{
+        margin: 0;
+      }
+
+      .user-img{
+        width: 20px;
+        height: 20px;
+        margin: 0 25px;
+      }
+
+    }
+
+  }
+}

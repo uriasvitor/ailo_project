@@ -1,0 +1,34 @@
+@import "../../shared/styles/colors.scss";
+
+.container{
+    display:grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 100px auto;
+    grid-template-areas:'AS MH' 'AS CT' 'AS FO';
+    height: 100vh;
+}
+
+content{
+  grid-area: CT;
+  overflow: hidden;
+}
+
+aside{
+    grid-area: AS;
+    background-color: $primary-color;
+    border-right: 1px solid #000;
+}
+
+main-header{
+    grid-area: MH;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 10px auto;
+}
+
+footer{
+  grid-area: FO;
+}
+
+

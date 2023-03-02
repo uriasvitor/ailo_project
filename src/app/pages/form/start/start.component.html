@@ -1,0 +1,48 @@
+
+<div class="container">
+  <h1 class="title">Informe o CPF do futuro cooperado (a)</h1>
+
+  <p class="sub-title">Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.
+    Digite apenas os números (sem pontos ou traços). </p>
+
+    <form [formGroup]="form" #novalidate>
+      <label for="cpf">
+        CPF
+      </label>
+
+      <div class="cpf-section">
+        <input type="text"
+          id="cpf"
+          mask="000.000.000-00"
+          placeholder="000.000.000-00"
+          maxlength="14"
+          required
+          name="cpf"
+          formControlName="cpf"
+          #cpf
+          >
+
+        <button id="getCpfButton"  (click)="onSubmit(cpf.value)">Consultar por CPF</button>
+
+        <div class="error" *ngIf="error">Informe um CPF válido</div>
+        <div class="error-noregister" *ngIf="message">CPF não está registrado</div>
+      </div>
+    </form>
+
+    <div class="user-info" *ngIf="userActive">
+      <h1>Situação cadastral do CPF</h1>
+      <p>Consulta na Receita Federal</p>
+
+      <div class="name-info" >
+        <img class="user-img" src="../../../../assets/images/user-avatar.png">
+        <p class="user-name">{{userInfo?.nome}}</p>
+      </div>
+
+      <div class="user-status">
+        <img class="verify-img">
+        <span>Situação do CPF</span>
+        <p class="user-name">{{userInfo?.status}}</p>
+      </div>
+
+    </div>
+</div>

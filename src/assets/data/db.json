@@ -1,0 +1,58 @@
+{
+  "registers": [
+    {
+      "id": 1,
+      "cpf": "345.233.242-32",
+      "nome": "Enzo cabrito ",
+      "status": "regular"
+    },
+    {
+      "id": 2,
+      "cpf": "789.251.900-95",
+      "nome": "Luquitas",
+      "status": "regular"
+    },
+    {
+      "id": 3,
+      "cpf": "490.529.790-73",
+      "nome": "Paulito Lemer",
+      "status": "regular"
+    },
+    {
+      "id": 4,
+      "cpf": "477.702.920-42",
+      "nome": "pedrita Pauliveira",
+      "status": "regular"
+    },
+    {
+      "id": 5,
+      "cpf": "002.571.030-31",
+      "nome": "Katarina",
+      "status": "regular"
+    },
+    {
+      "id": 6,
+      "cpf": "152.767.410-00",
+      "nome": "Yasuo",
+      "status": "regular"
+    },
+    {
+      "id": 7,
+      "cpf": "429.683.520-32",
+      "nome": "Syndra",
+      "status": "regular"
+    },
+    {
+      "id": 8,
+      "cpf": "904.516.370-54",
+      "nome": "Irelia",
+      "status": "regular"
+    },
+    {
+      "id": 9,
+      "cpf": "079.799.280-40",
+      "nome": "Zaiota",
+      "status": "regular"
+    }
+  ]
+}
